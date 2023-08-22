@@ -6,6 +6,7 @@ dotenv.config();
 
 export default defineConfig({
   plugins: [react()],
+  base: "/portofolio/",
   server: {
     host: true,
   },
