@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
 
-  <title>Ahmad Hasan Ali — Backend Developer</title>
+  <title data-i18n="page.title">Ahmad Hasan Ali — Backend Developer</title>
 </head>
 <body>
 
@@ -37,11 +37,11 @@
     <div class="navbar__inner container">
       <a href="#hero" class="navbar__logo" aria-label="Home">AHA</a>
       <ul class="navbar__links" id="nav-menu" role="menubar">
-        <li role="none"><a href="#about" class="navbar__link" role="menuitem">About</a></li>
-        <li role="none"><a href="#experience" class="navbar__link" role="menuitem">Experience</a></li>
-        <li role="none"><a href="#skills" class="navbar__link" role="menuitem">Skills</a></li>
-        <li role="none"><a href="#portfolio" class="navbar__link" role="menuitem">Portfolio</a></li>
-        <li role="none"><a href="#contact" class="navbar__link" role="menuitem">Contact</a></li>
+        <li role="none"><a href="#about" class="navbar__link" role="menuitem" data-i18n="nav.about">About</a></li>
+        <li role="none"><a href="#experience" class="navbar__link" role="menuitem" data-i18n="nav.experience">Experience</a></li>
+        <li role="none"><a href="#skills" class="navbar__link" role="menuitem" data-i18n="nav.skills">Skills</a></li>
+        <li role="none"><a href="#portfolio" class="navbar__link" role="menuitem" data-i18n="nav.portfolio">Portfolio</a></li>
+        <li role="none"><a href="#contact" class="navbar__link" role="menuitem" data-i18n="nav.contact">Contact</a></li>
         <li role="none">
           <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
             <svg class="theme-toggle__icon theme-toggle__icon--sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -60,6 +60,9 @@
             </svg>
           </button>
         </li>
+        <li role="none">
+          <button class="lang-toggle" id="lang-toggle" aria-label="Switch language" data-i18n="lang.toggle">ID</button>
+        </li>
       </ul>
       <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span class="navbar__hamburger-line"></span>
@@ -73,18 +76,18 @@
   <section id="hero" class="hero section">
     <div class="container">
       <div class="hero__content">
-        <p class="hero__greeting">Hi, my name is</p>
+        <p class="hero__greeting" data-i18n="hero.greeting">Hi, my name is</p>
         <h1 class="hero__name">Ahmad Hasan Ali.</h1>
         <h2 class="hero__title">Backend Developer</h2>
-        <p class="hero__description">
+        <p class="hero__description" data-i18n="hero.description">
           Software engineer with 3+ years of experience in back-end development,
           specializing in PHP, Laravel, Go, and PostgreSQL. Passionate about building
           scalable APIs, designing robust database architectures, and crafting
           maintainable systems.
         </p>
         <div class="hero__cta">
-          <a href="assets/files/CV_Ahmad_Hasan_Ali.pdf" class="btn btn--primary" download>Download CV</a>
-          <a href="#contact" class="btn btn--secondary">Contact Me</a>
+          <a href="assets/files/CV_Ahmad_Hasan_Ali.pdf" class="btn btn--primary" download data-i18n="hero.downloadCv">Download CV</a>
+          <a href="#contact" class="btn btn--secondary" data-i18n="hero.contactMe">Contact Me</a>
         </div>
       </div>
       <div class="hero__image-wrapper">
@@ -98,7 +101,7 @@
   <!-- About Section -->
   <section id="about" class="about section">
     <div class="container">
-      <h2 class="section__title">About Me</h2>
+      <h2 class="section__title" data-i18n="about.title">About Me</h2>
       <div class="about__grid">
         <div class="about__image-wrapper">
           <div class="about__image-frame">
@@ -106,29 +109,29 @@
           </div>
         </div>
         <div class="about__content">
-          <p>
+          <p data-i18n="about.p1">
             Software engineer with approximately three years of professional and internship
             experience in web development, with a specialization in back-end development.
             Highly motivated to advance my career in the back-end space, leveraging skills
             gained from multiple professional courses and real-world projects.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             Experienced in designing PostgreSQL database architectures, building and managing
             cross-platform APIs (Android, iOS, Web) serving thousands of registered users,
             implementing zero-downtime deployment strategies, and strengthening server security
             through hardening and mitigation configurations.
           </p>
-          <p>
+          <p data-i18n="about.p3">
             Outside of software, I run a small hydroponic lettuce farm since August 2025.
             This hands-on experience led me to build my own farm management system —
             bridging the gap between code and real-world agriculture. It also gives me
             a deeper understanding of the domain I'm coding for.
           </p>
           <ul class="about__details">
-            <li><span class="about__label">Location:</span> Sragen, Jawa Tengah</li>
-            <li><span class="about__label">Phone:</span> +62 822-2949-3159</li>
-            <li><span class="about__label">Email:</span> ahmadhasanali24@gmail.com</li>
-            <li><span class="about__label">Availability:</span> Open to opportunities</li>
+            <li><span class="about__label" data-i18n="about.location">Location:</span> Sragen, Jawa Tengah</li>
+            <li><span class="about__label" data-i18n="about.phone">Phone:</span> +62 822-2949-3159</li>
+            <li><span class="about__label" data-i18n="about.email">Email:</span> ahmadhasanali24@gmail.com</li>
+            <li><span class="about__label" data-i18n="about.availability">Availability:</span> <span data-i18n="about.availabilityVal">Open to opportunities</span></li>
           </ul>
         </div>
       </div>
@@ -138,17 +141,17 @@
   <!-- Experience Section -->
   <section id="experience" class="experience section">
     <div class="container">
-      <h2 class="section__title">Experience</h2>
+      <h2 class="section__title" data-i18n="experience.title">Experience</h2>
       <div class="timeline">
         <div class="timeline__item">
           <div class="timeline__marker"></div>
           <div class="timeline__content">
             <div class="timeline__header">
               <h3 class="timeline__position">Hydroponic Lettuce Farmer / Founder</h3>
-              <span class="timeline__company">Self-Employed — Sragen, Jawa Tengah</span>
+              <span class="timeline__company" data-i18n="experience.farmer.company">Self-Employed — Sragen, Jawa Tengah</span>
               <span class="timeline__date">Aug 2025 — Present</span>
             </div>
-            <p class="timeline__description">
+            <p class="timeline__description" data-i18n="experience.farmer.description">
               Running a small hydroponic NFT (Nutrient Film Technique) lettuce farm.
               Managing daily operations including PPM/pH monitoring, nutrient mixing,
               planting cycles, and harvest scheduling. Built my own farm management
@@ -170,7 +173,7 @@
               <span class="timeline__company">Stevor Express — Surabaya, Jawa Timur</span>
               <span class="timeline__date">Aug 2024 — Jan 2026</span>
             </div>
-            <p class="timeline__description">
+            <p class="timeline__description" data-i18n="experience.stevor.description">
               Designed optimal PostgreSQL database architectures to support growing application needs.
               Built and managed cross-platform APIs (Android, iOS, Web) serving 1,000+ registered
               users with 100+ active users. Implemented zero-downtime deployment and strengthened
@@ -195,7 +198,7 @@
               <span class="timeline__company">CV Gudang Media Perkasa — Surakarta, Jawa Tengah</span>
               <span class="timeline__date">Feb 2023 — Jul 2023</span>
             </div>
-            <p class="timeline__description">
+            <p class="timeline__description" data-i18n="experience.gmp.description">
               Developed web-based sales and inventory management platform using PHP, Laravel, and MySQL
               to streamline partner operations. Collaborated in cross-functional teams with modular
               development approach, fully responsible for Super Admin module. Delivered core product
@@ -217,7 +220,7 @@
               <span class="timeline__company">Sekolah Vokasi UNS — Surakarta, Jawa Tengah</span>
               <span class="timeline__date">Sep 2022 — Jan 2023</span>
             </div>
-            <p class="timeline__description">
+            <p class="timeline__description" data-i18n="experience.uns.description">
               Collaborated in a two-person development team to design and build a modern,
               high-performance company profile website for Sekolah Vokasi Universitas Sebelas Maret
               within a 5-month timeframe. Built multi-tenant CMS architecture using PHP (Laravel).
@@ -237,7 +240,7 @@
   <!-- Education Section -->
   <section id="education" class="education section">
     <div class="container">
-      <h2 class="section__title">Education</h2>
+      <h2 class="section__title" data-i18n="education.title">Education</h2>
       <div class="education__grid">
         <div class="education__card">
           <div class="education__icon">
@@ -246,7 +249,7 @@
               <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
             </svg>
           </div>
-          <h3 class="education__degree">Associate Expert Degree, Informatics Engineering</h3>
+          <h3 class="education__degree" data-i18n="education.degree">Associate Expert Degree, Informatics Engineering</h3>
           <p class="education__school">Universitas Sebelas Maret</p>
           <span class="education__year">2020 — 2023</span>
         </div>
@@ -258,42 +261,42 @@
   <!-- Skills Section -->
   <section id="skills" class="skills section">
     <div class="container">
-      <h2 class="section__title">Skills & Technologies</h2>
+      <h2 class="section__title" data-i18n="skills.title">Skills & Technologies</h2>
       <div class="skills__grid">
         <div class="skills__category">
           <h3 class="skills__category-title">Backend</h3>
           <div class="skills__items">
-            <div class="skills__item"><span>PHP</span><span class="skills__level skills__level--expert">Expert</span></div>
-            <div class="skills__item"><span>Laravel</span><span class="skills__level skills__level--expert">Expert</span></div>
-            <div class="skills__item"><span>Go</span><span class="skills__level skills__level--intermediate">Intermediate</span></div>
-            <div class="skills__item"><span>CodeIgniter</span><span class="skills__level skills__level--intermediate">Intermediate</span></div>
+            <div class="skills__item"><span>PHP</span><span class="skills__level skills__level--expert" data-i18n="skills.expert">Expert</span></div>
+            <div class="skills__item"><span>Laravel</span><span class="skills__level skills__level--expert" data-i18n="skills.expert">Expert</span></div>
+            <div class="skills__item"><span>Go</span><span class="skills__level skills__level--intermediate" data-i18n="skills.intermediate">Intermediate</span></div>
+            <div class="skills__item"><span>CodeIgniter</span><span class="skills__level skills__level--intermediate" data-i18n="skills.intermediate">Intermediate</span></div>
           </div>
         </div>
         <div class="skills__category">
           <h3 class="skills__category-title">Databases</h3>
           <div class="skills__items">
-            <div class="skills__item"><span>PostgreSQL</span><span class="skills__level skills__level--expert">Expert</span></div>
-            <div class="skills__item"><span>MySQL</span><span class="skills__level skills__level--expert">Expert</span></div>
-            <div class="skills__item"><span>SQLite</span><span class="skills__level skills__level--intermediate">Intermediate</span></div>
-            <div class="skills__item"><span>Database Design</span><span class="skills__level skills__level--expert">Expert</span></div>
+            <div class="skills__item"><span>PostgreSQL</span><span class="skills__level skills__level--expert" data-i18n="skills.expert">Expert</span></div>
+            <div class="skills__item"><span>MySQL</span><span class="skills__level skills__level--expert" data-i18n="skills.expert">Expert</span></div>
+            <div class="skills__item"><span>SQLite</span><span class="skills__level skills__level--intermediate" data-i18n="skills.intermediate">Intermediate</span></div>
+            <div class="skills__item"><span>Database Design</span><span class="skills__level skills__level--expert" data-i18n="skills.expert">Expert</span></div>
           </div>
         </div>
         <div class="skills__category">
           <h3 class="skills__category-title">DevOps & Tools</h3>
           <div class="skills__items">
-            <div class="skills__item"><span>Git</span><span class="skills__level skills__level--expert">Expert</span></div>
-            <div class="skills__item"><span>Docker</span><span class="skills__level skills__level--intermediate">Intermediate</span></div>
-            <div class="skills__item"><span>Ubuntu Server</span><span class="skills__level skills__level--intermediate">Intermediate</span></div>
-            <div class="skills__item"><span>Nginx</span><span class="skills__level skills__level--intermediate">Intermediate</span></div>
+            <div class="skills__item"><span>Git</span><span class="skills__level skills__level--expert" data-i18n="skills.expert">Expert</span></div>
+            <div class="skills__item"><span>Docker</span><span class="skills__level skills__level--intermediate" data-i18n="skills.intermediate">Intermediate</span></div>
+            <div class="skills__item"><span>Ubuntu Server</span><span class="skills__level skills__level--intermediate" data-i18n="skills.intermediate">Intermediate</span></div>
+            <div class="skills__item"><span>Nginx</span><span class="skills__level skills__level--intermediate" data-i18n="skills.intermediate">Intermediate</span></div>
           </div>
         </div>
         <div class="skills__category">
           <h3 class="skills__category-title">Frontend</h3>
           <div class="skills__items">
-            <div class="skills__item"><span>HTML/CSS</span><span class="skills__level skills__level--expert">Expert</span></div>
-            <div class="skills__item"><span>JavaScript</span><span class="skills__level skills__level--expert">Expert</span></div>
-            <div class="skills__item"><span>Vue.js</span><span class="skills__level skills__level--intermediate">Intermediate</span></div>
-            <div class="skills__item"><span>Tailwind CSS</span><span class="skills__level skills__level--intermediate">Intermediate</span></div>
+            <div class="skills__item"><span>HTML/CSS</span><span class="skills__level skills__level--expert" data-i18n="skills.expert">Expert</span></div>
+            <div class="skills__item"><span>JavaScript</span><span class="skills__level skills__level--expert" data-i18n="skills.expert">Expert</span></div>
+            <div class="skills__item"><span>Vue.js</span><span class="skills__level skills__level--intermediate" data-i18n="skills.intermediate">Intermediate</span></div>
+            <div class="skills__item"><span>Tailwind CSS</span><span class="skills__level skills__level--intermediate" data-i18n="skills.intermediate">Intermediate</span></div>
           </div>
         </div>
       </div>
@@ -303,17 +306,15 @@
   <!-- Portfolio Section -->
   <section id="portfolio" class="portfolio section">
     <div class="container">
-      <h2 class="section__title">Featured Projects</h2>
+      <h2 class="section__title" data-i18n="portfolio.title">Featured Projects</h2>
       <div class="portfolio__grid">
         <article class="portfolio__card">
           <div class="portfolio__image">
-            <div class="portfolio__image-placeholder">
-              <span class="portfolio__image-text">QL</span>
-            </div>
+            <img src="assets/images/qurbanledger_landing.png" alt="QurbanLedger" class="portfolio__image-img">
           </div>
           <div class="portfolio__body">
             <h3 class="portfolio__title">QurbanLedger</h3>
-            <p class="portfolio__description">
+            <p class="portfolio__description" data-i18n="portfolio.qurban.description">
               Offline-First Qurban Fund Ledger System for Muhammadiyah Branches (PRM).
               Ledger-based fund management tracking seluruh perpindahan dana dari peserta
               hingga LAZIS dengan dukungan offline synchronization dan audit trail.
@@ -337,13 +338,11 @@
         </article>
         <article class="portfolio__card">
           <div class="portfolio__image">
-            <div class="portfolio__image-placeholder">
-              <span class="portfolio__image-text">HF</span>
-            </div>
+            <img src="assets/images/Hydroponics.png" alt="Hydroponic Farm Manager" class="portfolio__image-img">
           </div>
           <div class="portfolio__body">
             <h3 class="portfolio__title">Hydroponic Farm Manager</h3>
-            <p class="portfolio__description">
+            <p class="portfolio__description" data-i18n="portfolio.hydro.description">
               Farm management system I built for my own hydroponic lettuce farm.
               Tracks daily PPM/pH readings, nutrient and pH Down usage, tank conditions,
               and planting cycles. Built with Laravel 12 + Livewire 3.
@@ -372,8 +371,8 @@
   <!-- Contact Section -->
   <section id="contact" class="contact section">
     <div class="container">
-      <h2 class="section__title">Get In Touch</h2>
-      <p class="contact__intro">
+      <h2 class="section__title" data-i18n="contact.title">Get In Touch</h2>
+      <p class="contact__intro" data-i18n="contact.intro">
         I'm currently open to new opportunities. Whether you have a project idea,
         a job offer, or just want to say hi — feel free to reach out!
       </p>
@@ -381,22 +380,22 @@
         <form class="contact__form" action="https://formspree.io/f/xnjklgqb" method="POST">
           <input type="hidden" name="_next" value="https://ahmadhasanali.github.io/cv/">
           <div class="contact__form-group">
-            <label for="name" class="contact__label">Name</label>
-            <input type="text" id="name" name="name" class="contact__input" required placeholder="Your name">
+            <label for="name" class="contact__label" data-i18n="contact.name">Name</label>
+            <input type="text" id="name" name="name" class="contact__input" required data-i18n-placeholder="contact.namePlaceholder" placeholder="Your name">
           </div>
           <div class="contact__form-group">
-            <label for="email" class="contact__label">Email</label>
-            <input type="email" id="email" name="email" class="contact__input" required placeholder="your@email.com">
+            <label for="email" class="contact__label" data-i18n="contact.email">Email</label>
+            <input type="email" id="email" name="email" class="contact__input" required data-i18n-placeholder="contact.emailPlaceholder" placeholder="your@email.com">
           </div>
           <div class="contact__form-group">
-            <label for="message" class="contact__label">Message</label>
-            <textarea id="message" name="message" class="contact__textarea" required placeholder="Your message..." rows="5"></textarea>
+            <label for="message" class="contact__label" data-i18n="contact.message">Message</label>
+            <textarea id="message" name="message" class="contact__textarea" required data-i18n-placeholder="contact.messagePlaceholder" placeholder="Your message..." rows="5"></textarea>
           </div>
-          <button type="submit" class="btn btn--primary contact__submit">Send Message</button>
+          <button type="submit" class="btn btn--primary contact__submit" data-i18n="contact.send">Send Message</button>
         </form>
         <div class="contact__info">
-          <h3 class="contact__info-title">Let's Connect</h3>
-          <p class="contact__info-text">
+          <h3 class="contact__info-title" data-i18n="contact.connectTitle">Let's Connect</h3>
+          <p class="contact__info-text" data-i18n="contact.connectText">
             Feel free to reach out through any of these platforms:
           </p>
           <div class="contact__socials">
@@ -419,7 +418,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__content">
-        <p class="footer__copyright">&copy; 2026 Ahmad Hasan Ali. Built with love.</p>
+        <p class="footer__copyright" data-i18n="footer.copyright">&copy; 2026 Ahmad Hasan Ali. Built with love.</p>
         <div class="footer__links">
           <a href="https://github.com/ahmadhasanali" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://linkedin.com/in/ahmadhasanali" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
