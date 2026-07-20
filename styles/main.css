@@ -629,6 +629,8 @@ body {
   border: 1px solid var(--border);
   border-radius: 12px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   transition: all var(--transition);
 }
 
@@ -642,6 +644,7 @@ body {
   width: 100%;
   aspect-ratio: 16 / 10;
   overflow: hidden;
+  background: var(--bg-secondary);
 }
 
 .portfolio__image-placeholder {
@@ -662,7 +665,7 @@ body {
 .portfolio__image-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform var(--transition-slow);
 }
 
@@ -675,6 +678,14 @@ body {
 
 .portfolio__body {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.portfolio__body > .portfolio__tags,
+.portfolio__body > .portfolio__links {
+  margin-top: auto;
 }
 
 .portfolio__title {
