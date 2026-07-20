@@ -1,0 +1,52 @@
+[
+  {
+    "id": "qurban",
+    "title": "QurbanLedger",
+    "image": "assets/images/qurbanledger_landing.png",
+    "descriptionKey": "portfolio.qurban.description",
+    "tags": [
+      "Vue 3",
+      "Laravel 12",
+      "PostgreSQL",
+      "PWA",
+      "Docker"
+    ],
+    "showGithub": false,
+    "showDemo": false,
+    "githubUrl": "#",
+    "demoUrl": "#"
+  },
+  {
+    "id": "hydro",
+    "title": "Hydroponic Farm Manager",
+    "image": "assets/images/Hydroponics.png",
+    "descriptionKey": "portfolio.hydro.description",
+    "tags": [
+      "Laravel 12",
+      "Livewire 3",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Docker"
+    ],
+    "githubUrl": "https://github.com/Ahmadhasanali/Hydroponic-Farm-Management-System_Laravel",
+    "demoUrl": "#"
+  },
+  {
+    "id": "stevor",
+    "title": "Stevor Express",
+    "image": "assets/images/stevor_onboarding.png",
+    "descriptionKey": "portfolio.stevor.description",
+    "tags": [
+      "Serverpod",
+      "Dart Language",
+      "GoLang",
+      "PostgreSQL",
+      "Docker",
+      "Google Cloud"
+    ],
+    "showGithub": false,
+    "showDemo": false,
+    "githubUrl": "#",
+    "demoUrl": "#"
+  }
+]
